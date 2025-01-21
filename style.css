@@ -360,7 +360,10 @@
     .banner>*:nth-child(2){
         order: -1;
     }
-    
+    .banner-content{
+        justify-content: center;
+        text-align: center;
+    }
     .curriculum>h3{
         font-size: 1.6rem;
     }
