@@ -29,6 +29,9 @@
     color: #DEF5FF;
     background-color: rgb(53, 53, 95);
 }
+.menu-icon{
+    display: none;
+}
 .nav-menu{
     display: flex;
 }
@@ -339,17 +342,25 @@
     margin-left: 200px;
 }
 @media screen and (max-width: 576px) {
+    .margin{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
     .nav-bar>.navbar-icon>h3, .nav-item, .btn-contact{
         display: none;
     }
-    
+    .menu-icon{
+        display: flex;
+    }
     .banner{
         grid-template-columns: repeat(1, 1fr);
         grid-auto-flow: dense;
+        gap: 20px;
     }
     .banner>*:nth-child(2){
         order: -1;
     }
+    
     .curriculum>h3{
         font-size: 1.6rem;
     }
